@@ -183,16 +183,16 @@ const spotlightSections: SpotlightSectionProps[] = projects.map(
 
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
                 <Link
-                  href="/portfolio"
+                  href="/about"
                   className="inline-flex h-[42px] min-w-[142px] items-center justify-center border border-black/25 bg-transparent px-5 text-sm font-semibold tracking-[0.35em] text-[#171717] transition-colors hover:bg-black/5"
                 >
-                  VIEW OUR WORK
+                  ABOUT US
                 </Link>
                 <Link
-                  href="/services"
+                  href="/contact"
                   className="inline-flex h-[42px] min-w-[142px] items-center justify-center border border-black/25 bg-transparent px-5 text-sm font-semibold tracking-[0.35em] text-[#171717] transition-colors hover:bg-black/5"
                 >
-                  EXPLORE SERVICES
+                  CONTACT US
                 </Link>
               </div>
             </div>
@@ -298,7 +298,7 @@ const spotlightSections: SpotlightSectionProps[] = projects.map(
       </div>
         </div>
     </section>
-    
+
       <section className="pb-20 bg-white">
           <SplitText
             tag="h2"

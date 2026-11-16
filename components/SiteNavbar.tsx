@@ -13,11 +13,8 @@ type SiteNavbarProps = {
 
 const menuItems = [
   { label: "Home", ariaLabel: "Go to home page", link: "/" },
-  { label: "About Us", ariaLabel: "Learn about IQRATI", link: "/about" },
-  { label: "Services", ariaLabel: "View our services", link: "/services" },
-  { label: "Portfolio", ariaLabel: "View our portfolio", link: "/portfolio" },
-  { label: "FAQ", ariaLabel: "Frequently asked questions", link: "/faq" },
-  { label: "Contact Us", ariaLabel: "Get in touch", link: "/contact" },
+  { label: "About", ariaLabel: "Learn about IQRATI", link: "/about" },
+  { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
 ];
 
 const socialItems = [
@@ -33,29 +30,11 @@ const navbarThemes = {
     menuButtonColor: "#171717",
     openMenuButtonColor: "#7C3AED",
   },
-  "/services": {
-    colors: ["#eef7f5", "#10d7d1"],
-    accentColor: "#007c78",
-    menuButtonColor: "#171717",
-    openMenuButtonColor: "#007c78",
-  },
   "/contact": {
     colors: ["#fbefef", "#EF4444"],
     accentColor: "#b42318",
     menuButtonColor: "#171717",
     openMenuButtonColor: "#b42318",
-  },
-  "/portfolio": {
-    colors: ["#f3f0e4", "#FFD700"],
-    accentColor: "#806000",
-    menuButtonColor: "#171717",
-    openMenuButtonColor: "#806000",
-  },
-  "/faq": {
-    colors: ["#eef7f5", "#10d7d1"],
-    accentColor: "#007c78",
-    menuButtonColor: "#171717",
-    openMenuButtonColor: "#007c78",
   },
   "/": {
     colors: ["#f3f0e4", "#FFD700"],

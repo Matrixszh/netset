@@ -181,22 +181,7 @@ export default function AboutPage() {
             />
 
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link
-                href="/services"
-                className="inline-flex h-11 min-w-[170px] items-center justify-center border border-black/10 bg-white px-6 text-[10px] font-medium uppercase tracking-[0.26em] text-black transition-colors hover:bg-[#f0eee8]"
-              >
-                <SplitText
-                  tag="span"
-                  text="Explore Services"
-                  className="block"
-                  textAlign="center"
-                  splitType="chars"
-                  delay={8}
-                  duration={0.45}
-                  from={{ opacity: 0, y: 8 }}
-                  to={{ opacity: 1, y: 0 }}
-                />
-              </Link>
+
               <Link
                 href="/contact"
                 className="inline-flex h-11 min-w-[170px] items-center justify-center border border-black/20 bg-transparent px-6 text-[10px] font-medium uppercase tracking-[0.26em] text-[#171717] transition-colors hover:bg-black/5"

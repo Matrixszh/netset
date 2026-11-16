@@ -11,9 +11,7 @@ type SiteFooterProps = {
 const sitemapLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const socialLinks = [
@@ -29,12 +27,9 @@ const contactLinks = [
 ];
 
 const footerBrandThemes = {
-  "/": "text-[#806000]", 
+  "/": "text-[#806000]",
   "/about": "text-[#7C3AED]",
-  "/services": "text-[#007c78]", 
-  "/contact": "text-[#EF4444]",
-  "/portfolio": "text-[#806000]", 
-  "/faq": "text-[#007c78]", 
+  "/contact": "text-[#b42318]",
 } as const;
 
 export default function SiteFooter({
