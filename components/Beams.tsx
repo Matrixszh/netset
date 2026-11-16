@@ -233,12 +233,12 @@ const Beams: FC<BeamsProps> = ({
         },
         material: { fog: true },
         uniforms: {
-          diffuse: new THREE.Color(...hexToNormalizedRGB('#e9dfc2')),
+          diffuse: new THREE.Color(...hexToNormalizedRGB('#e4bd3c')),
           time: { shared: true, mixed: true, linked: true, value: 0 },
-          roughness: 0.3,
-          metalness: 0.3,
+          roughness: 0.85,
+          metalness: 0,
           uSpeed: { shared: true, mixed: true, linked: true, value: speed },
-          envMapIntensity: 10,
+          envMapIntensity: 1,
           uNoiseIntensity: noiseIntensity,
           uScale: scale
         }
@@ -252,7 +252,7 @@ const Beams: FC<BeamsProps> = ({
         <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamHeight} />
         <DirLight color={lightColor} position={[0, 3, 10]} />
       </group>
-      <ambientLight intensity={1} />
+      <ambientLight intensity={0.85} />
       <color attach="background" args={['#f7f6f2']} />
       <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={30} />
     </CanvasWrapper>

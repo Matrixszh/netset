@@ -34,7 +34,7 @@ type AtmosphereProps = {
 
 export default function Atmosphere({
   radius = 1.08,
-  color = "#5fa8ff",
+  color = "#FFD700",
 }: AtmosphereProps) {
   const material = useMemo(
     () =>

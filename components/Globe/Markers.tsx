@@ -30,7 +30,7 @@ function MarkerItem({
   const coreRef = useRef<THREE.Mesh>(null);
   const auraRef = useRef<THREE.Mesh>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const color = location.color ?? "#7dd3fc";
+  const color = location.color ?? "#FFD700"
   const tagPosition = useMemo(
     () => position.clone().normalize().multiplyScalar(0.36),
     [position],

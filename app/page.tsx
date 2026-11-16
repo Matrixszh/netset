@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "motion/react";
-import Beams from "@/components/Beams";
+import GradientASCII from "@/components/GradientASCII";
 import DotGrid from "@/components/DotGrid";
 import Globe, { type GlobeLocation } from "@/components/Globe/Globe";
 import ServiceIcon from "@/components/ServiceIcon";
@@ -154,19 +154,21 @@ const spotlightSections: SpotlightSectionProps[] = projects.map(
         <section >
           <div className="relative overflow-hidden h-[100vh] bg-[#f7f6f2] px-4 py-12 sm:px-8 sm:py-16 md:px-10 md:py-20">
             <div className="pointer-events-none absolute inset-0">
-              <Beams
-                beamWidth={3}
-                beamHeight={30}
-                beamNumber={20}
-                lightColor="#FFD700"
-                speed={2}
-                noiseIntensity={1.75}
-                scale={0.2}
-                rotation={30}
+              <GradientASCII
+                colors={["#FFD700", "#F2B900", "#FFF0A6", "#D9A500"]}
+                shape="horizon"
+                cellSize={16}
+                density={0.68}
+                glyphOpacity={0.8}
+                glow={0.25}
+                speed={0.7}
+                gradientOpacity={0.8}
+                grain={0.02}
+                clickEffect="none"
+                lightMode
+                className="h-full w-full"
               />
             </div>
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_12%,rgba(255,255,255,0.035),transparent_18%)]" />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/0 via-white/10 to-white/40" />
 
             <div className="relative pt-40 md:pt-10">
               <SplitText

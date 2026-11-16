@@ -36,11 +36,11 @@ export default function Stars({
     <Points ref={pointsRef} positions={positions} stride={3} frustumCulled={false}>
       <PointMaterial
         transparent
-        color="#f8f6e9"
+        color="#d4b43a"
         size={0.014}
         sizeAttenuation
         depthWrite={false}
-        opacity={0.72}
+        opacity={0.48}
       />
     </Points>
   );

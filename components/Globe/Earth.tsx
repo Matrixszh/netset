@@ -11,9 +11,9 @@ export default function Earth({ radius = 1 }: EarthProps) {
   const fillMaterial = useMemo(
     () =>
       new THREE.MeshBasicMaterial({
-        color: "#ffffff",
+        color: "#FFD700",
         transparent: true,
-        opacity: 0.08,
+        opacity: 0.18,
         depthWrite: false,
       }),
     [],
@@ -22,10 +22,10 @@ export default function Earth({ radius = 1 }: EarthProps) {
   const wireframeMaterial = useMemo(
     () =>
       new THREE.MeshBasicMaterial({
-        color: "#ffffff",
+        color: "#c49a00",
         wireframe: true,
         transparent: true,
-        opacity: 0.95,
+        opacity: 0.85,
       }),
     [],
   );
